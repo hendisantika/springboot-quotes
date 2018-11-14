@@ -1,0 +1,14 @@
+---
+spring:
+  profiles.active: development
+---
+auth.key: 123
+spring:
+  profiles: development
+  data:
+    mongodb.uri: ${MONGODB_URI}
+---
+spring:
+  profiles: production
+  data:
+    mongodb.uri: ${MONGODB_URI}
